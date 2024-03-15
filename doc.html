@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management API Documentation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Custom styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
             padding: 20px;
         }
 
         h1 {
             color: #333;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -42,56 +44,74 @@
 </head>
 
 <body>
-    <h1>Welcome to the User Management API Documentation</h1>
+    <div class="container">
+        <h1>Welcome to the User Management API Documentation</h1>
 
-    <p>Replace <code>https://simple-crud-api-six.vercel.app/</code> with the appropriate host and port if the server is
-        hosted elsewhere.</p>
+        <p>Replace <code>https://simple-crud-api-six.vercel.app/</code> with the appropriate host and port if the server
+            is
+            hosted elsewhere.</p>
 
-    <h2>Authentication</h2>
+        <h2>Authentication</h2>
 
-    <p>This API does not require authentication. Anyone can access the endpoints.</p>
+        <p>This API does not require authentication. Anyone can access the endpoints.</p>
 
-    <h2>Endpoints</h2>
+        <h2>Endpoints</h2>
 
-    <h3>Get all users</h3>
-    <ul>
-        <li><strong>URL:</strong> <code>/users</code></li>
-        <li><strong>Method:</strong> GET</li>
-        <li><strong>Description:</strong> Retrieve a list of all users.</li>
-        <li><strong>Response:</strong> Returns an array of user objects containing <code>username</code> and
-            <code>password</code> fields.
-        </li>
-    </ul>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Get all users</h3>
+                <ul class="card-text">
+                    <li><strong>URL:</strong> <code>/users</code></li>
+                    <li><strong>Method:</strong> GET</li>
+                    <li><strong>Description:</strong> Retrieve a list of all users.</li>
+                    <li><strong>Response:</strong> Returns an array of user objects containing <code>username</code> and
+                        <code>password</code> fields.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <h3>Get user by ID</h3>
-    <ul>
-        <li><strong>URL:</strong> <code>/users/:id</code></li>
-        <li><strong>Method:</strong> GET</li>
-        <li><strong>Description:</strong> Retrieve user information by ID.</li>
-        <li><strong>Parameters:</strong>
-            <ul>
-                <li><code>id</code>: The unique identifier of the user.</li>
-            </ul>
-        </li>
-        <li><strong>Response:</strong> Returns the user object corresponding to the provided ID.</li>
-    </ul>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Get user by ID</h3>
+                <ul class="card-text">
+                    <li><strong>URL:</strong> <code>/users/:id</code></li>
+                    <li><strong>Method:</strong> GET</li>
+                    <li><strong>Description:</strong> Retrieve user information by ID.</li>
+                    <li><strong>Parameters:</strong>
+                        <ul>
+                            <li><code>id</code>: The unique identifier of the user.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Response:</strong> Returns the user object corresponding to the provided ID.</li>
+                </ul>
+            </div>
+        </div>
 
-    <!-- Repeat the same structure for other endpoints -->
+        <!-- Repeat the same structure for other endpoints -->
 
-    <h2>Error Handling</h2>
+        <h2>Error Handling</h2>
 
-    <p>If an endpoint is accessed with an invalid ID or if the requested resource does not exist, the API will return a
-        <code>404 Not Found</code> error.
-    </p>
-    <p>If there are any validation errors (e.g., invalid password format), the API will return a
-        <code>400 Bad Request</code> error with details about the validation failure.
-    </p>
+        <p>If an endpoint is accessed with an invalid ID or if the requested resource does not exist, the API will
+            return a
+            <code>404 Not Found</code> error.
+        </p>
+        <p>If there are any validation errors (e.g., invalid password format), the API will return a
+            <code>400 Bad Request</code> error with details about the validation failure.
+        </p>
 
-    <h2>Sample Usage</h2>
+        <h2>Sample Usage</h2>
 
-    <h3>Get all users</h3>
-    <pre><code>GET https://simple-crud-api-six.vercel.app/users</code></pre>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Get all users</h3>
+                <pre class="card-text"><code>GET https://simple-crud-api-six.vercel.app/users</code></pre>
+            </div>
+        </div>
+    </div>
 
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
