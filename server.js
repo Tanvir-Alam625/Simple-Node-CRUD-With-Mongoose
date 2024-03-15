@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const userRoutes = require("./routes/UserRoutes.js");
+const path = require("path");
 
 const app = express();
 require("dotenv").config();
@@ -17,6 +18,10 @@ mongoose.set("strictQuery", false);
 
 // Routes
 app.use("/users", userRoutes);
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "doc.html"));
+});
 
 // Start server
 app.listen(PORT, () => {
