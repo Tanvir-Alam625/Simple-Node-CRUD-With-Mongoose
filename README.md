@@ -8,7 +8,7 @@ This API provides basic CRUD (Create, Read, Update, Delete) operations for manag
 
 The base URL for accessing the API endpoints is:
 
-Replace `localhost:3000` with the appropriate host and port if the server is hosted elsewhere.
+Replace `https://simple-crud-api-six.vercel.app/` with the appropriate host and port if the server is hosted elsewhere.
 
 ## Authentication
 
