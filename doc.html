@@ -87,6 +87,74 @@
                 </ul>
             </div>
         </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Create user</h3>
+                <ul class="card-text">
+                    <li><strong>URL:</strong> <code>/users</code></li>
+                    <li><strong>Method:</strong> POST</li>
+                    <li><strong>Description:</strong> Create a new user.</li>
+                    <li><strong>Body JSON:</strong> <strong>Required</strong>: username, password</strong>
+                        <ul>
+                            <li><code>username</code>:
+                                <ul>
+                                    <li>
+                                        The unique identifier of the user.
+                                    </li>
+                                    <li>Minimum length: 3, Maximum Length: 20</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><code>password</code>:
+                                <ul>
+                                    <li>minLength: 3, maxLength: 30</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Response:</strong> Returns the created user object.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">update user</h3>
+                <ul class="card-text">
+                    <li><strong>URL:</strong> <code>/users/:id</code></li>
+                    <li><strong>Method:</strong> PUT</li>
+                    <li><strong>Description:</strong> Update user information by ID.</li>
+                    <li><strong>Parameters: id</strong>
+                        <ul>
+                            <li><code>id</code>: The unique identifier of the user.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Body JSON: password, username</strong>
+                        <ul>
+                            <li><code>password</code>: The new password.</li>
+                            <li><code>username</code>: The new username.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Response:</strong> Returns the updated user object.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">delete user</h3>
+                <ul class="card-text">
+                    <li><strong>URL:</strong> <code>/users/:id</code></li>
+                    <li><strong>Method:</strong> DELETE</li>
+                    <li><strong>Description:</strong> Delete user by ID.</li>
+                    <li><strong>Parameters: id</strong>
+                        <ul>
+                            <li><code>id</code>: The unique identifier of the user.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Response:</strong> Returns a success message.</li>
+                </ul>
+            </div>
+        </div>
 
         <!-- Repeat the same structure for other endpoints -->
 
